@@ -1,0 +1,11 @@
+.bg-img {
+  background-image: url("./images/nav.png");
+}
+
+.copyright{
+  text-align: center;
+}
+
+.footer{
+  background-image: url("./images/nav.png");
+}
