@@ -28,7 +28,7 @@ class Header extends Component {
                 <Navbar dark expand="md" className="shadow p-3 fixed-top navbar ">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto " href="/">GEN
+                        <NavbarBrand className="mr-auto " href="/">GC
                         <Button outline className="btn btn-google">Download Rulebook</Button>
                         <Button outline className="btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
                         </NavbarBrand>

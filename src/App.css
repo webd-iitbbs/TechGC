@@ -166,7 +166,12 @@ thead{
 }
 }
 
-.btn{
+.btn-google{
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.btn-facebook{
+  margin-left: 10px;
+  margin-right: 0px;
 }
