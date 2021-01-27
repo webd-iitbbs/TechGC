@@ -124,6 +124,9 @@
   .MuiTab-root{
     font-size: 1em !important;
   }
+  .hidden{
+    display: none;
+  }
 }
 @media (max-width: 509px) {
 .x{
@@ -154,3 +157,4 @@ thead{
 .card-body{
   background-color: rgb(167, 217, 217);
 }
+
