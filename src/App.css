@@ -144,7 +144,7 @@ thead{
 }
 @media (max-width: 479px) {
   #clip{
-    width: 300px;
+    width: 350px;
     margin-top: 50px;
   }
   #bodyBg{
