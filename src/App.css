@@ -1,0 +1,156 @@
+.navbar{
+  z-index: 1000;
+  background-color: rgb(30, 56, 89);
+  position: fixed;
+}
+#bodyBg{
+  background-color: rgb(30, 56, 89);
+  height: 700px;
+}
+.block{
+  height: 100px;
+  background-color: rgb(30, 56, 89);
+}
+.text{
+  text-align: center;
+  float: left;
+  margin-top: 175px;
+  font-size: 1.4em;
+  color: rgb(167, 217, 217);
+}
+
+#clip{
+  float: right;
+  margin-top: 125px;
+}
+.copyright{
+  text-align: center;
+}
+.footer{
+  background-color: rgba(167, 217, 217, 0.452);
+}
+.GeneralC{
+  font-size: 2.2em;
+}
+
+#contact{
+  font-size: 1.2em;
+  text-decoration: none;
+  color: inherit;
+  border: 4px solid rgba(167, 217, 217, 0.452);
+  padding: 4px 12px 6px 12px;
+  border-radius: 1000px;
+}
+#contact:hover{
+  background-color: rgb(167, 217, 217);
+  color: rgb(30, 56, 89);
+}
+.x{
+  margin-top: 72px;
+}
+
+.navlink1{
+  color: rgb(30, 56, 89);
+  font-size: 1.5em;
+  margin: 0px;
+}
+.navlink1:hover{
+  background-color: rgb(167, 217, 217);
+  color: rgb(30, 56, 89);
+}
+
+.image{
+  width: 100%;
+  height: 400px;
+}
+.appbar{
+  background-color: rgb(167, 217, 217);
+}
+
+.MuiTab-root{
+  font-size: 1.5em !important;
+}
+
+.carouseltext{
+  background-color: rgba(0, 0, 0, 0.658);
+  display: inline;
+  padding: 2px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #clip{
+    width: 400px;
+  }
+  #bodyBg{
+    height: 600px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #clip{
+    width: 330px;
+    margin-top: 150px;
+  }
+  #bodyBg{
+    height: 600px;
+  }
+  .text{
+    margin-top: 125px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  #clip{
+    width: 375px;
+    margin-right: 75px;
+    margin-top: 50px;
+  }
+  #bodyBg{
+    height: 1100px;
+  }
+  .MuiTab-root{
+    font-size: 1em !important;
+  }
+}
+@media (max-width: 479px) {
+  #clip{
+    width: 300px;
+    margin-top: 50px;
+  }
+  #bodyBg{
+    height: 1100px;
+  }
+  .MuiTab-root{
+    font-size: 1em !important;
+  }
+}
+@media (max-width: 509px) {
+.x{
+  margin-top: 100px;
+}
+}
+
+.y{
+  margin-top: 90px;
+  color: rgb(30, 56, 89);
+}
+
+tbody{
+  color: rgb(30, 56, 89);
+  border-radius: 20px;
+
+}
+.table{
+  background-color: rgb(167, 217, 217);
+  border-radius: 20px;
+}
+thead{
+  background-color: rgb(30, 56, 89);
+  color: rgb(167, 217, 217);
+  border-radius: 20px;
+  border: 5px solid rgb(167, 217, 217);
+}
+.card-body{
+  background-color: rgb(167, 217, 217);
+}
