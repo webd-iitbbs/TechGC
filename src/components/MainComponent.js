@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
+import Body from './BodyComponent';
+import Events from './EventsComponent';
+import Team from './TeamComponent';
+import Leader from './LeaderComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Background from "../images/nav.png";
-
-var sectionStyle = {
-  width: "100%",
-  height: "840px",
-  backgroundImage: `url(${Background})`
-};
 
 class Main extends Component {
 
@@ -16,10 +13,15 @@ class Main extends Component {
     return (
       <div>
         <Header />
-        <main style= {sectionStyle}>
-
-        </main>
-        <Footer />
+        <Switch>
+              <Route path='/home' component={Body} />
+              <Route path='/events' component={Events} />
+              <Route path='/team'  component={Team} />
+              <Route path='/leader'  component={Leader} />
+              <Route path='/contactus'  component={Team} />
+              <Redirect to="/home" />
+          </Switch>        
+          <Footer />
       </div>
     );
   }

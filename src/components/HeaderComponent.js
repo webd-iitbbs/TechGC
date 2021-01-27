@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { BsFillAwardFill } from 'react-icons/bs';
+import { FaUsers } from 'react-icons/fa';
+import { MdEventNote } from 'react-icons/md';
+import { IoHome } from 'react-icons/io5';
 
 class Header extends Component {
     constructor(props) {
@@ -20,26 +24,38 @@ class Header extends Component {
 
     render() {
         return(
-            <div className="bg-img">
-                <Navbar expand="md" className="shadow p-3 rounded fixed-top">
+            <div>
+                <Navbar dark expand="md" className="shadow p-3 fixed-top navbar ">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto " href="/">INNOVATION CHALLENGE</NavbarBrand>
+                        <NavbarBrand className="mr-auto " href="/">GEN</NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                             <NavItem>
-                                <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
+                                <NavLink className="nav-link"  to='/home'><IoHome className="fa-lg" /> Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to='/events'><span className="fa fa-calendar fa-lg"></span>Events</NavLink>
+                                <NavLink className="nav-link" to='/events'><MdEventNote className="fa-lg" /> Events</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link"  to='/team'><span className="fa fa-users fa-lg"></span>Team</NavLink>
+                                <NavLink className="nav-link"  to='/team'><FaUsers className="fa-lg" /> Team</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link"  to='/leader'><BsFillAwardFill className="fa-lg"/> LeaderBoard</NavLink>
                             </NavItem>
                             </Nav>
                         </Collapse>
+                        <Nav className="ml-auto" navbar>
+                                <NavItem>
+                                    <Button outline className="btn btn-google">Download Rulebook</Button>
+                                </NavItem>
+                                <NavItem>
+                                    <Button outline className="btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
+                                </NavItem>
+                        </Nav>
                     </div>
                 </Navbar>
+                {/* <div class="block"></div> */}
             </div>
         );
     }
