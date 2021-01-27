@@ -97,11 +97,9 @@ class Leader extends Component{
                             <td className="hidden">{this.state.leaderboard[5].part} </td>
                             <td>{this.state.leaderboard[5].total} </td>
                         </tr>
-                        
-    
-                        
                     </tbody>
                     </Table>
+                    <div className="note">**Tilt your device to Landscape Mode to see full table</div>
                     </div>
             </div>
         );
