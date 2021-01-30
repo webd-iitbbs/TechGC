@@ -173,15 +173,11 @@ thead{
   .note{
     color: rgb(167, 217, 217);
   }
+  .hiden{
+    display: none !important;
+  }
 }
-@media (max-width: 509px) {
-.x{
-  margin-top: 100px;
-}
-.hiden{
-  display: none !important;
-}
-}
+
 
 .btn-google{
   margin-left: 10px;
