@@ -29,11 +29,11 @@ class Header extends Component {
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto " href="/">GC
-                        <Button outline className="btn btn-google">Download Rulebook</Button>
-                        <Button outline className="btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
+                        <Button outline className="hide btn btn-google">Download Rulebook</Button>
+                        <Button outline className="hide btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav className="ml-auto" navbar>
+                            <Nav className="mr-auto" navbar>
                             <NavItem>
                                 <NavLink className="nav-link"  to='/home'><IoHome className="fa-lg" /> Home</NavLink>
                             </NavItem>
@@ -48,14 +48,14 @@ class Header extends Component {
                             </NavItem>
                             </Nav>
                         </Collapse>
-                        {/* <Nav className="ml-auto" navbar>
+                        <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <Button outline className="btn btn-google">Download Rulebook</Button>
+                                    <Button outline className="hiden btn btn-google">Download Rulebook</Button>
                                 </NavItem>
                                 <NavItem>
-                                    <Button outline className="btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
+                                    <Button outline className="hiden btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
                                 </NavItem>
-                        </Nav> */}
+                        </Nav>
                     </div>
                 </Navbar>
                 {/* <div class="block"></div> */}
