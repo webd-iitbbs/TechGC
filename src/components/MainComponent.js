@@ -5,6 +5,7 @@ import Body from './BodyComponent';
 import Events from './EventsComponent';
 import Team from './TeamComponent';
 import Leader from './LeaderComponent';
+import Rule from './RuleComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -19,6 +20,7 @@ class Main extends Component {
               <Route path='/team'  component={Team} />
               <Route path='/leader'  component={Leader} />
               <Route path='/contactus'  component={Team} />
+              {/* <Route path='/rule'  component={Rule} /> */}
               <Redirect to="/home" />
           </Switch>        
           <Footer />

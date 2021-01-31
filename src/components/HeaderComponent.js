@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Button } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { BsFillAwardFill } from 'react-icons/bs';
 import { FaUsers } from 'react-icons/fa';
 import { MdEventNote } from 'react-icons/md';
 import { IoHome } from 'react-icons/io5';
 import logo from '../images/GClogo2.png';
-import rule21 from '../shared/Rule21.pdf';
 
 class Header extends Component {
     constructor(props) {
@@ -30,8 +29,8 @@ class Header extends Component {
                 <Navbar dark expand="md" className="shadow p-3 fixed-top navbar ">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto " ><img src={logo} className="logo" width="90" alt='General Championship' />
-                        <a href='../shared/Rule21.pdf'><Button outline className="hide btn btn-google">Download Rulebook</Button></a>
+                        <NavbarBrand className="mr-auto" ><img src={logo} className="logo" width="90" alt='General Championship' />
+                        <Link to="../shared/Rule21.pdf" target="_blank" download className="hide btn btn-google">Download Rulebook</Link>
                         <Button outline className="hide btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -52,7 +51,7 @@ class Header extends Component {
                         </Collapse>
                         <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <Button outline className="hiden btn btn-google">Download Rulebook</Button>
+                                <Link to="../shared/Rule21.pdf" target="_blank" download="RuleBook.pdf" className="hiden btn btn-google">Download Rulebook</Link>
                                 </NavItem>
                                 <NavItem>
                                     <Button outline className="hiden btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
