@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf';
-import rule from 'D:/TechGC/src/shared/Rule21.pdf';
+import rule from '../shared/Rule21.pdf';
 // 'D:\TechGC\src\shared\Rule21.pdf'
 class Rule extends Component {
     constructor(props){
@@ -8,7 +8,7 @@ class Rule extends Component {
         console.log(rule);
         this.state = {
             numPages: null,
-            pageNumber: 1
+            pageNumber: 1,
         }
     }
 
