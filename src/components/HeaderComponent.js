@@ -5,6 +5,8 @@ import { BsFillAwardFill } from 'react-icons/bs';
 import { FaUsers } from 'react-icons/fa';
 import { MdEventNote } from 'react-icons/md';
 import { IoHome } from 'react-icons/io5';
+import logo from '../images/GClogo2.png';
+import rule21 from '../shared/Rule21.pdf';
 
 class Header extends Component {
     constructor(props) {
@@ -28,8 +30,8 @@ class Header extends Component {
                 <Navbar dark expand="md" className="shadow p-3 fixed-top navbar ">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto " href="/">GC
-                        <Button outline className="hide btn btn-google">Download Rulebook</Button>
+                        <NavbarBrand className="mr-auto " ><img src={logo} className="logo" width="90" alt='General Championship' />
+                        <a href='../shared/Rule21.pdf'><Button outline className="hide btn btn-google">Download Rulebook</Button></a>
                         <Button outline className="hide btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>

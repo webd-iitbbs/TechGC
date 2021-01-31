@@ -180,14 +180,22 @@ thead{
 
 
 .btn-google{
-  margin-left: 10px;
-  margin-right: 10px;
   padding: 4px !important ;
 }
 
 .btn-facebook{
   margin-left: 10px;
-  margin-right: 10px;
   padding: 4px !important ;
 
+}
+.navbar-toggler {
+  padding: 0px !important;
+  font-size: 1em !important;
+  line-height: 0 !important;
+  border: none !important;
+  border-radius: .25rem;
+}
+
+.navbar-brand{
+  padding: 0px !important;
 }

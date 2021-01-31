@@ -43,7 +43,7 @@ class Technical extends Component{
                         <img className="d-block w-100 image" src={coding} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Competitive Coding</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Webd | 00:00</p>
+                        <p className="carouseltext">00/00/00 | Neuromancers | 00:00</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
@@ -51,7 +51,7 @@ class Technical extends Component{
                         <img className="d-block w-100 image" src={hackathon} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Hackathon</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Webd | 00:00</p>
+                        <p className="carouseltext">00/00/00 | Neuromancers | 00:00</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
@@ -59,7 +59,7 @@ class Technical extends Component{
                         <img className="d-block w-100 image" src={problem} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Semester Long Problem Solving</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Webd | 00:00</p>
+                        <p className="carouseltext">00/00/00 | Neuromancers | 00:00</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
