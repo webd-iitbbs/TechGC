@@ -35,7 +35,7 @@ class Technical extends Component{
                         <img className="d-block w-100 image" src={webathon} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Webathon</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Webd | 00:00</p>
+                        <p className="carouseltext">13/02/21 | Webd | 09:00</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
