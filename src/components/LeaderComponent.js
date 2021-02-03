@@ -42,7 +42,7 @@ class Leader extends Component{
                         cultscore.Civil += obj.cescore; 
                         cultscore.Metallurgy += obj.mmscore;
                     }
-                }
+                });
                                
                 
          
