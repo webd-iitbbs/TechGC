@@ -71,8 +71,8 @@ class Leader extends Component{
                     <tbody>                    
                         <tr>
                             <td>{this.state.leaderboard[0].branch} </td>
-                            <td className="hidden">{this.state.leaderboard[0].tech} (techScore.leaderboard[0].branch) </td>
-                            <td className="hidden">{this.state.leaderboard[0].cult} (cultScore.leaderboard[0].branch)</td>
+                            <td className="hidden">{this.state.leaderboard[0].tech} (techScore.{this.state.leaderboard[0].branch}) </td>
+                            <td className="hidden">{this.state.leaderboard[0].cult} (cultScore.{this.state.leaderboard[0].branch})</td>
                             <td className="hidden">{this.state.leaderboard[0].sports} </td>
                             <td className="hidden">{this.state.leaderboard[0].part} </td>
                             <td>{this.state.leaderboard[0].total} </td>
