@@ -27,17 +27,17 @@ class Leader extends Component{
             
                 originalScore.forEach(function(obj){
                     if(obj.council == "tech") {
-                        techscore.(Computer Science) += obj.csscore;
+                        techscore['Computer Science'] += obj.csscore;
                         techscore.Electrical += obj.eescore;
-                        techscore.(Electronics & Communication Engineering) += obj.ecscore;
+                        techscore['Electronics & Communication Engineering'] += obj.ecscore;
                         techscore.Mechanical += obj.mescore;
                         techscore.Civil += obj.cescore; 
                         techscore.Metallurgy += obj.mmscore;
                     }
                     if(obj.council == "cult") {
-                        cultscore.(Computer Science) += obj.csscore;
+                        cultscore.['Computer Science'] += obj.csscore;
                         cultscore.Electrical += obj.eescore;
-                        cultscore.(Electronics & Communication Engineering) += obj.ecscore;
+                        cultscore.['Electronics & Communication Engineering'] += obj.ecscore;
                         cultscore.Mechanical += obj.mescore;
                         cultscore.Civil += obj.cescore; 
                         cultscore.Metallurgy += obj.mmscore;
