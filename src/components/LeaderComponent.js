@@ -50,7 +50,8 @@ class Leader extends Component{
                     }
                 });
             
-            this.setState({ techScores : techscore }, {cultScores : cultscore });
+            this.setState({ techScores : techscore })
+            this.setState({cultScores : cultscore });
                                
                 
          
