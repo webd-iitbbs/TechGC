@@ -23,28 +23,27 @@ class Leader extends Component{
                 console.log(this.state.leaderboard);
                 var originalScore = response.data[1];
                 var techscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
-                for (int i = 0; i<originalScore.length ; i++){
-                    if(originalScore[i].council == "tech") {
-                        techscore.(Computer Science) += originalScore[i].csscore;
-                        techscore.Electrical += originalScore[i].eescore;
-                        techscore.(Electronics & Communication Engineering) += originalScore[i].ecscore;
-                        techscore.Mechanical += originalScore[i].mescore;
-                        techscore.Civil += originalScore[i].cescore; 
-                        techscore.Metallurgy += originalScore[i].mmscore;
-                    }
-                }
-                
                 var cultscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
-                for (int i = 0; i<originalScore.length ; i++){
-                    if(originalScore[i].council == "cult") {
-                        cultscore.(Computer Science) += originalScore[i].csscore;
-                        cultscore.Electrical += originalScore[i].eescore;
-                        cultscore.(Electronics & Communication Engineering) += originalScore[i].ecscore;
-                        cultscore.Mechanical += originalScore[i].mescore;
-                        cultscore.Civil += originalScore[i].cescore; 
-                        cultscore.Metallurgy += originalScore[i].mmscore;
+            
+                originalScore.forEach(function(obj){
+                    if(obj.council == "tech") {
+                        techscore.(Computer Science) += obj.csscore;
+                        techscore.Electrical += obj.eescore;
+                        techscore.(Electronics & Communication Engineering) += obj.ecscore;
+                        techscore.Mechanical += obj.mescore;
+                        techscore.Civil += obj.cescore; 
+                        techscore.Metallurgy += obj.mmscore;
+                    }
+                    if(obj.council == "cult") {
+                        cultscore.(Computer Science) += obj.csscore;
+                        cultscore.Electrical += obj.eescore;
+                        cultscore.(Electronics & Communication Engineering) += obj.ecscore;
+                        cultscore.Mechanical += obj.mescore;
+                        cultscore.Civil += obj.cescore; 
+                        cultscore.Metallurgy += obj.mmscore;
                     }
                 }
+                               
                 
          
             })
