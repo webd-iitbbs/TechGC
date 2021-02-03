@@ -19,7 +19,7 @@ class Leader extends Component{
         axios.get('https://cors-anywhere.herokuapp.com/https://gc2021iitbbs.herokuapp.com/leaderboard')
             .then(response => {
                 console.log('hi')
-                this.setState({ leaderboard: response.data });
+                this.setState({ leaderboard: response.data[0] });
                 console.log(this.state.leaderboard);
             })
             .catch(function (error){
