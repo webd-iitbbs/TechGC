@@ -21,6 +21,8 @@ class Leader extends Component{
                 console.log('hi')
                 this.setState({ leaderboard: response.data[0] });
                 console.log(this.state.leaderboard);
+                var originalScore = response.data[1];
+         
             })
             .catch(function (error){
                 console.log(error);
