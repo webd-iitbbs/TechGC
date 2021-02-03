@@ -11,11 +11,14 @@ class Leader extends Component{
             ,{tech: 'loading...', cult: 'loading...', sports: 'loading...', part: 'loading...', total: 'loading...', branch : 'loading...'}
             ,{tech: 'loading...', cult: 'loading...', sports: 'loading...', part: 'loading...', total: 'loading...', branch : 'loading...'}
             ,{tech: 'loading...', cult: 'loading...', sports: 'loading...', part: 'loading...', total: 'loading...', branch : 'loading...'}
-        ]};
+        ], 
+             techScores : { "Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0}, 
+            cultScores : {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0}
+            
+            };
     }
     
-    var techscore = {};
-    var cultscore = {};
+
     
     componentDidMount() {
         console.log('hi')
@@ -25,8 +28,8 @@ class Leader extends Component{
                 this.setState({ leaderboard: response.data[0] });
                 console.log(this.state.leaderboard);
                 var originalScore = response.data[1];
-                techscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
-                cultscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
+                var techscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
+                var cultscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
             
                 originalScore.forEach(function(obj){
                     if(obj.council == "tech") {
@@ -46,6 +49,8 @@ class Leader extends Component{
                         cultscore.Metallurgy += obj.mmscore;
                     }
                 });
+            
+            this.setState({ techScores : techScore }, {cultScores : cultScore });
                                
                 
          
@@ -74,8 +79,8 @@ class Leader extends Component{
                     <tbody>                    
                         <tr>
                             <td>{this.state.leaderboard[0].branch} </td>
-                            <td className="hidden">{this.state.leaderboard[0].tech} (techScore.{this.state.leaderboard[0].branch}) </td>
-                            <td className="hidden">{this.state.leaderboard[0].cult} (cultScore.{this.state.leaderboard[0].branch})</td>
+                            <td className="hidden">{this.state.leaderboard[0].tech} ({this.state.techScores.{this.state.leaderboard[0].branch}}) </td>
+                            <td className="hidden">{this.state.leaderboard[0].cult} ({this.state.cultScores.{this.state.leaderboard[0].branch}})</td>
                             <td className="hidden">{this.state.leaderboard[0].sports} </td>
                             <td className="hidden">{this.state.leaderboard[0].part} </td>
                             <td>{this.state.leaderboard[0].total} </td>
