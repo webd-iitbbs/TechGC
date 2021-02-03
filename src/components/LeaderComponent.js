@@ -22,6 +22,30 @@ class Leader extends Component{
                 this.setState({ leaderboard: response.data[0] });
                 console.log(this.state.leaderboard);
                 var originalScore = response.data[1];
+                var techscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
+                for (int i = 0; i<originalScore.length ; i++){
+                    if(originalScore[i].council == "tech") {
+                        techscore.(Computer Science) += originalScore[i].csscore;
+                        techscore.Electrical += originalScore[i].eescore;
+                        techscore.(Electronics & Communication Engineering) += originalScore[i].ecscore;
+                        techscore.Mechanical += originalScore[i].mescore;
+                        techscore.Civil += originalScore[i].cescore; 
+                        techscore.Metallurgy += originalScore[i].mmscore;
+                    }
+                }
+                
+                var cultscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
+                for (int i = 0; i<originalScore.length ; i++){
+                    if(originalScore[i].council == "cult") {
+                        cultscore.(Computer Science) += originalScore[i].csscore;
+                        cultscore.Electrical += originalScore[i].eescore;
+                        cultscore.(Electronics & Communication Engineering) += originalScore[i].ecscore;
+                        cultscore.Mechanical += originalScore[i].mescore;
+                        cultscore.Civil += originalScore[i].cescore; 
+                        cultscore.Metallurgy += originalScore[i].mmscore;
+                    }
+                }
+                
          
             })
             .catch(function (error){
@@ -48,8 +72,8 @@ class Leader extends Component{
                     <tbody>                    
                         <tr>
                             <td>{this.state.leaderboard[0].branch} </td>
-                            <td className="hidden">{this.state.leaderboard[0].tech} </td>
-                            <td className="hidden">{this.state.leaderboard[0].cult} </td>
+                            <td className="hidden">{this.state.leaderboard[0].tech} (techScore.leaderboard[0].branch) </td>
+                            <td className="hidden">{this.state.leaderboard[0].cult} (cultScore.leaderboard[0].branch)</td>
                             <td className="hidden">{this.state.leaderboard[0].sports} </td>
                             <td className="hidden">{this.state.leaderboard[0].part} </td>
                             <td>{this.state.leaderboard[0].total} </td>
