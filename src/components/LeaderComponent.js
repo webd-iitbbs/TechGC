@@ -13,7 +13,10 @@ class Leader extends Component{
             ,{tech: 'loading...', cult: 'loading...', sports: 'loading...', part: 'loading...', total: 'loading...', branch : 'loading...'}
         ]};
     }
-
+    
+    var techscore;
+    var cultscore;
+    
     componentDidMount() {
         console.log('hi')
         axios.get('https://cors-anywhere.herokuapp.com/https://gc2021iitbbs.herokuapp.com/leaderboard')
@@ -22,8 +25,8 @@ class Leader extends Component{
                 this.setState({ leaderboard: response.data[0] });
                 console.log(this.state.leaderboard);
                 var originalScore = response.data[1];
-                var techscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
-                var cultscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
+                techscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
+                cultscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
             
                 originalScore.forEach(function(obj){
                     if(obj.council == "tech") {
