@@ -14,8 +14,8 @@ class Leader extends Component{
         ]};
     }
     
-    var techscore;
-    var cultscore;
+    var techscore = {};
+    var cultscore = {};
     
     componentDidMount() {
         console.log('hi')
