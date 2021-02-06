@@ -11,16 +11,50 @@ class Leader extends Component{
             ,{tech: 'loading...', cult: 'loading...', sports: 'loading...', part: 'loading...', total: 'loading...', branch : 'loading...'}
             ,{tech: 'loading...', cult: 'loading...', sports: 'loading...', part: 'loading...', total: 'loading...', branch : 'loading...'}
             ,{tech: 'loading...', cult: 'loading...', sports: 'loading...', part: 'loading...', total: 'loading...', branch : 'loading...'}
-        ]};
+        ], 
+             techScores : { "Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0}, 
+            cultScores : {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0}
+            
+            };
     }
+    
 
+    
     componentDidMount() {
         console.log('hi')
         axios.get('https://cors-anywhere.herokuapp.com/https://gc2021iitbbs.herokuapp.com/leaderboard')
             .then(response => {
                 console.log('hi')
-                this.setState({ leaderboard: response.data });
+                this.setState({ leaderboard: response.data[0] });
                 console.log(this.state.leaderboard);
+                var originalScore = response.data[1];
+                var techscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
+                var cultscore = {"Computer Science": 0, "Electrical" : 0, "Electronics & Communication Engineering" : 0, "Mechanical" : 0, "Civil" : 0, "Metallurgy": 0};
+            
+                originalScore.forEach(function(obj){
+                    if(obj.council == "tech") {
+                        techscore['Computer Science'] += obj.csscore;
+                        techscore.Electrical += obj.eescore;
+                        techscore['Electronics & Communication Engineering'] += obj.ecscore;
+                        techscore.Mechanical += obj.mescore;
+                        techscore.Civil += obj.cescore; 
+                        techscore.Metallurgy += obj.mmscore;
+                    }
+                    if(obj.council == "cult") {
+                        cultscore.['Computer Science'] += obj.csscore;
+                        cultscore.Electrical += obj.eescore;
+                        cultscore.['Electronics & Communication Engineering'] += obj.ecscore;
+                        cultscore.Mechanical += obj.mescore;
+                        cultscore.Civil += obj.cescore; 
+                        cultscore.Metallurgy += obj.mmscore;
+                    }
+                });
+            
+            this.setState({ techScores : techscore })
+            this.setState({cultScores : cultscore });
+                               
+                
+         
             })
             .catch(function (error){
                 console.log(error);
@@ -46,8 +80,8 @@ class Leader extends Component{
                     <tbody>                    
                         <tr>
                             <td>{this.state.leaderboard[0].branch} </td>
-                            <td className="hidden">{this.state.leaderboard[0].tech} </td>
-                            <td className="hidden">{this.state.leaderboard[0].cult} </td>
+                            <td className="hidden">{this.state.leaderboard[0].tech} ({this.state.techScores['{this.state.leaderboard[0].branch}']}) </td>
+                            <td className="hidden">{this.state.leaderboard[0].cult} ({this.state.cultScores['{this.state.leaderboard[0].branch}']})</td>
                             <td className="hidden">{this.state.leaderboard[0].sports} </td>
                             <td className="hidden">{this.state.leaderboard[0].part} </td>
                             <td>{this.state.leaderboard[0].total} </td>
