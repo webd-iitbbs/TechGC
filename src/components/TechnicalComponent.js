@@ -6,6 +6,7 @@ import webathon from '../images/Webathon.jpg';
 import coding from '../images/CompetitiveCoding.png';
 import hackathon from '../images/Hackathon.png';
 import problem from '../images/ProblemSolving.jpg';
+import decode from '../images/Decode.jpg';
 
 class Technical extends Component{
     render(){
@@ -36,6 +37,14 @@ class Technical extends Component{
                         <Carousel.Caption>
                         <h3 className="carouseltext">Webathon</h3><br/><br/>
                         <p className="carouseltext">13/02/21 | Webd | 09:00</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={1000}>
+                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <img className="d-block w-100 image" src={decode} alt="Third slide"/></a>
+                        <Carousel.Caption>
+                        <h3 className="carouseltext">Decode the Message</h3><br/><br/>
+                        <p className="carouseltext">00/00/00 | Nakshatra | 00:00</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
