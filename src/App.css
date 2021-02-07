@@ -109,76 +109,6 @@ thead{
   color: rgb(30, 56, 89);
 }
 
-@media (min-width: 1200px) {
-.hide{
-  display: none !important;
-}}
-@media (min-width: 992px) and (max-width: 1199px) {
-  #clip{
-    width: 400px;
-  }
-  #bodyBg{
-    height: 600px;
-  }
-  .hide{
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #clip{
-    width: 330px;
-    margin-top: 150px;
-  }
-  #bodyBg{
-    height: 600px;
-  }
-  .text{
-    margin-top: 125px;
-  }
-  .hide{
-    display: none !important;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-  #clip{
-    width: 375px;
-    margin-right: 75px;
-    margin-top: 50px;
-  }
-  #bodyBg{
-    height: 1100px;
-  }
-  .MuiTab-root{
-    font-size: 1em !important;
-  }
-  .hiden{
-    display: none !important;
-  }
-}
-@media (max-width: 479px) {
-  #clip{
-    width: 350px;
-    margin-top: 50px;
-  }
-  #bodyBg{
-    height: 1100px;
-  }
-  .MuiTab-root{
-    font-size: 1em !important;
-  }
-  .hidden{
-    display: none !important;
-  }
-  .note{
-    color: rgb(167, 217, 217);
-  }
-  .hiden{
-    display: none !important;
-  }
-}
-
-
 .btn-google{
   padding: 4px !important ;
 }
@@ -199,3 +129,77 @@ thead{
 .navbar-brand{
   padding: 0px !important;
 }
+
+@media (min-width: 1200px) {
+  .hide{
+    display: none !important;
+  }}
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #clip{
+      width: 400px;
+    }
+    #bodyBg{
+      height: 600px;
+    }
+    .hide{
+      display: none !important;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #clip{
+      width: 330px;
+      margin-top: 150px;
+    }
+    #bodyBg{
+      height: 600px;
+    }
+    .text{
+      margin-top: 125px;
+    }
+    .hide{
+      display: none !important;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 767px) {
+    #clip{
+      width: 375px;
+      margin-right: 75px;
+      margin-top: 50px;
+    }
+    #bodyBg{
+      height: 1100px;
+    }
+    .MuiTab-root{
+      font-size: 1em !important;
+    }
+    .hiden{
+      display: none !important;
+    }
+  }
+  @media (max-width: 479px) {
+    #clip{
+      width: 350px;
+      margin-top: 50px;
+    }
+    #bodyBg{
+      height: 1100px;
+    }
+    .MuiTab-root{
+      font-size: 1em !important;
+    }
+    .hidden{
+      display: none !important;
+    }
+    .note{
+      color: rgb(167, 217, 217);
+    }
+    .hiden{
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 376px) {
+
+    
+  }
