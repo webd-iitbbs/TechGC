@@ -201,5 +201,11 @@ thead{
 
   @media (max-width: 376px) {
 
-    
+    .hide{
+      font-size: 0.65em !important;
+    }
+
+    .MuiTab-root{
+      font-size: 0.8em !important;
+    }
   }
