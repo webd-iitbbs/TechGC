@@ -30,7 +30,7 @@ class Header extends Component {
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" ><img src={logo} className="logo" width="90" alt='General Championship' />
-                        <Link to="../shared/Rule21.pdf" target="_blank" download className="hide btn btn-google">Download Rulebook</Link>
+                        <a href="https://drive.google.com/file/d/1Rzts92xwh5BCgwuY1GXqy6QxmkZmsP19/view?usp=sharing" target="_blank"className="hide btn btn-google">Download Rulebook</a>
                         <Button outline className="hide btn btn-facebook" href="https://iitbbs-forms.herokuapp.com/">Register</Button>
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
