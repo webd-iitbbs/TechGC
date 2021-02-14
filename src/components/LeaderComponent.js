@@ -97,7 +97,7 @@ class Leader extends Component {
     console.log("hi");
     axios
       .get(
-        "http://gobetween.oklabs.org/https://gc2021iitbbs.herokuapp.com/leaderboard"
+        "https://yacdn.org/proxy/https://gc2021iitbbs.herokuapp.com/leaderboard"
       )
       .then((response) => {
         console.log("hi");
