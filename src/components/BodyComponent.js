@@ -8,7 +8,7 @@ function Body(props){
                 <div className="row row-content">
                     <div className="col-12 col-md-6 text">
                         <h1 class="GeneralC">General Championship</h1><br/>
-                        <p>You can't solve a problem on the same level that it was created. You have to rise above it to the next level.</p><br/>
+                        <p>When the odds are stacked against you, what are you made of? Champion always finds out. Champions keep playing until they get it right.</p>
                         <a href="https://iitbbs-forms.herokuapp.com/" id="contact" >Register   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                     </div>
                     <div className="col-12 col-md">
