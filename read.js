@@ -1,5 +1,4 @@
 const { google } = require("googleapis");
-const keys = require("./keys.json");
 // const util = require('./utility');
 
 const client_email = process.env.CLIENT_EMAIL;
