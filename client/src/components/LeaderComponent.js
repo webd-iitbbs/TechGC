@@ -16,6 +16,7 @@ class Leader extends Component {
           sportsAbs: "",
           part: "loading...",
           total: "loading...",
+          totalAbs: "",
           branch: "loading...",
         },
         {
@@ -27,6 +28,7 @@ class Leader extends Component {
           sportsAbs: "",
           part: "loading...",
           total: "loading...",
+          totalAbs: "",
           branch: "loading...",
         },
         {
@@ -38,6 +40,7 @@ class Leader extends Component {
           sportsAbs: "",
           part: "loading...",
           total: "loading...",
+          totalAbs: "",
           branch: "loading...",
         },
         {
@@ -49,6 +52,7 @@ class Leader extends Component {
           sportsAbs: "",
           part: "loading...",
           total: "loading...",
+          totalAbs: "",
           branch: "loading...",
         },
         {
@@ -60,6 +64,7 @@ class Leader extends Component {
           sportsAbs: "",
           part: "loading...",
           total: "loading...",
+          totalAbs: "",
           branch: "loading...",
         },
         {
@@ -71,6 +76,31 @@ class Leader extends Component {
           sportsAbs: "",
           part: "loading...",
           total: "loading...",
+          totalAbs: "",
+          branch: "loading...",
+        },
+        {
+          tech: "loading...",
+          techAbs: "",
+          cult: "loading...",
+          cultAbs: "",
+          sports: "loading...",
+          sportsAbs: "",
+          part: "loading...",
+          total: "loading...",
+          totalAbs: "",
+          branch: "loading...",
+        },
+        {
+          tech: "loading...",
+          techAbs: "",
+          cult: "loading...",
+          cultAbs: "",
+          sports: "loading...",
+          sportsAbs: "",
+          part: "loading...",
+          total: "loading...",
+          totalAbs: "",
           branch: "loading...",
         },
       ],
@@ -96,12 +126,52 @@ class Leader extends Component {
   componentDidMount() {
     console.log("hi");
     axios
-      .get(
-        "https://yacdn.org/proxy/https://gc2021iitbbs.herokuapp.com/leaderboard"
-      )
+      .get("http://localhost:3001/leaderboard")
       .then((response) => {
         console.log("hi");
-        this.setState({ leaderboard: response.data[0] });
+        let receivedData = response.data[0];
+        let techAbsScores = [],
+          cultAbsScores = [],
+          sportsAbsScores = [],
+          partAbsScores = [];
+        for (let item of receivedData) {
+          techAbsScores.push(parseInt(item.techAbs));
+          cultAbsScores.push(parseInt(item.cultAbs));
+          sportsAbsScores.push(parseInt(item.sportsAbs));
+          partAbsScores.push(parseInt(item.part));
+        }
+        let techMax = Math.max(...techAbsScores),
+          cultMax = Math.max(...cultAbsScores),
+          sportsMax = Math.max(...sportsAbsScores),
+          partMax = Math.max(...partAbsScores);
+        console.log(techMax);
+        let techNormalizedScores = techAbsScores.map((value) => {
+          return Math.ceil((value / techMax) * 100);
+        });
+        let cultNormalizedScores = cultAbsScores.map((value) => {
+          return Math.ceil((value / cultMax) * 100);
+        });
+        let sportsNormalizedScores = sportsAbsScores.map((value) => {
+          return Math.ceil((value / sportsMax) * 100);
+        });
+        let partNormalizedScores = partAbsScores.map((value) => {
+          return Math.ceil((value / partMax) * 100);
+        });
+        for (let i in receivedData) {
+          receivedData[i].tech = techNormalizedScores[i];
+          receivedData[i].cult = cultNormalizedScores[i];
+          receivedData[i].sports = sportsNormalizedScores[i];
+          receivedData[i].part = partNormalizedScores[i];
+          receivedData[i].total =
+            techNormalizedScores[i] +
+            cultNormalizedScores[i] +
+            sportsNormalizedScores[i] +
+            partNormalizedScores[i];
+        }
+        receivedData.sort((a, b) => {
+          return b.total - a.total;
+        });
+        this.setState({ leaderboard: receivedData });
         console.log(this.state.leaderboard);
         // var originalScore = response.data[1];
         // var techscore = {
@@ -273,6 +343,40 @@ class Leader extends Component {
                 </td>
                 <td className="hidden">{this.state.leaderboard[5].part} </td>
                 <td>{this.state.leaderboard[5].total} </td>
+              </tr>
+              <tr>
+                <td>{this.state.leaderboard[6].branch} </td>
+                <td className="hidden">
+                  {this.state.leaderboard[6].tech} (
+                  {this.state.leaderboard[6].techAbs})
+                </td>
+                <td className="hidden">
+                  {this.state.leaderboard[6].cult} (
+                  {this.state.leaderboard[6].cultAbs})
+                </td>
+                <td className="hidden">
+                  {this.state.leaderboard[6].sports}(
+                  {this.state.leaderboard[6].sportsAbs})
+                </td>
+                <td className="hidden">{this.state.leaderboard[6].part} </td>
+                <td>{this.state.leaderboard[6].total} </td>
+              </tr>
+              <tr>
+                <td>{this.state.leaderboard[7].branch} </td>
+                <td className="hidden">
+                  {this.state.leaderboard[7].tech} (
+                  {this.state.leaderboard[7].techAbs})
+                </td>
+                <td className="hidden">
+                  {this.state.leaderboard[7].cult} (
+                  {this.state.leaderboard[7].cultAbs})
+                </td>
+                <td className="hidden">
+                  {this.state.leaderboard[7].sports}(
+                  {this.state.leaderboard[7].sportsAbs})
+                </td>
+                <td className="hidden">{this.state.leaderboard[7].part} </td>
+                <td>{this.state.leaderboard[7].total} </td>
               </tr>
             </tbody>
           </Table>
