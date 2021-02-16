@@ -126,7 +126,7 @@ class Leader extends Component {
   componentDidMount() {
     console.log("hi");
     axios
-      .get("http://localhost:3001/leaderboard")
+      .get("/leaderboard")
       .then((response) => {
         console.log("hi");
         let receivedData = response.data[0];
