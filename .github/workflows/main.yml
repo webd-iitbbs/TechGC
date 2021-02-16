@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: test
+        run: |
+          echo $CLIENT_EMAIL
         env: 
           CLIENT_EMAIL: ${{ secrets.CLIENT_EMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
