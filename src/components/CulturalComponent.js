@@ -23,7 +23,7 @@ class Cultural extends Component{
                 <div className="col-12 col-md-8 offset-md-2">
                 <Carousel>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={vrittant} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Hindi Story Writing: Vrittant</h3><br/><br/>
@@ -31,7 +31,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={akshar} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Hindi Poetry Slam: Akshar</h3><br/><br/>
@@ -39,7 +39,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={art} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Art competition</h3><br/><br/>
@@ -47,7 +47,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={drams} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Curtains Up</h3><br/><br/>
@@ -55,7 +55,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={photo} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Online Photography</h3><br/><br/>
@@ -63,7 +63,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={wiki} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">The Wikipedia Game: Wiki-tracing</h3><br/><br/>
@@ -71,7 +71,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={devil} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Devil's Advocate: Accusio Salvare</h3><br/><br/>
@@ -79,7 +79,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={sportsquiz} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Sports and Entertainment Quiz</h3><br/><br/>
@@ -87,7 +87,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={generalquiz} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">General Quiz</h3><br/><br/>
@@ -95,7 +95,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={question} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Question making</h3><br/><br/>
@@ -103,7 +103,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={solosinging} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Solo Singing Competition</h3><br/><br/>
@@ -111,7 +111,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={instrumental} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Solo Instrumental Competition</h3><br/><br/>
@@ -119,7 +119,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={trailer} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Trailer Making Competition: Re-Cut</h3><br/><br/>
@@ -127,7 +127,7 @@ class Cultural extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={Dancing} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Solo Dance</h3><br/><br/>

@@ -16,7 +16,7 @@ class Technical extends Component{
                 <div className="col-12 col-md-8 offset-md-2">
                 <Carousel>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={graphic} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Graphic Design</h3><br/><br/>
@@ -24,7 +24,7 @@ class Technical extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={marathon} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Design Marathon</h3><br/><br/>
@@ -32,23 +32,23 @@ class Technical extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={webathon} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Webathon</h3><br/><br/>
                         <p className="carouseltext">13/02/21 | Webd | 09:00</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                    {/* <Carousel.Item interval={1000}>
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={decode} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Decode the Message</h3><br/><br/>
                         <p className="carouseltext">00/00/00 | Nakshatra | 00:00</p>
                         </Carousel.Caption>
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={coding} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Competitive Coding</h3><br/><br/>
@@ -56,7 +56,7 @@ class Technical extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={hackathon} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Hackathon</h3><br/><br/>
@@ -64,7 +64,7 @@ class Technical extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="https://iitbbs-forms.herokuapp.com/">
+                        <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={problem} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Semester Long Problem Solving</h3><br/><br/>
