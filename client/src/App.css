@@ -105,6 +105,16 @@ thead{
   border-radius: 20px;
   border: 5px solid rgb(167, 217, 217);
 }
+
+td{
+  text-align: center;
+}
+
+th{
+  text-align: center !important;
+}
+
+
 .card-body{
   background-color: rgb(167, 217, 217);
 }
