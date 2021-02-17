@@ -41,7 +41,7 @@ class Team extends Component{
                             </Card.Body>
                         </Card>
                         </div>
-                        <div className="offset-md-1 col-md-5">
+                        {/* <div className="offset-md-1 col-md-5">
                         <Card style={{ width: '18rem'}} className="y">
                             <Card.Body>
                                 <Card.Title>For Decode the Message</Card.Title>
@@ -50,14 +50,14 @@ class Team extends Component{
                                 <Card.Text><span className="fa fa-envelope fa-lg"></span> sm88@iitbbs.ac.in</Card.Text>
                             </Card.Body>
                         </Card>
-                        </div>
+                        </div> */}
                         <div className="offset-md-1 col-md-5">
                         <Card style={{ width: '18rem'}} className="y">
                             <Card.Body>
                                 <Card.Title>For Competitive coding</Card.Title>
-                                <Card.Text><span className="fa fa-user fa-lg"></span>name</Card.Text>
-                                <Card.Text><span className="fa fa-phone fa-lg"></span> phone</Card.Text>
-                                <Card.Text><span className="fa fa-envelope fa-lg"></span> email</Card.Text>
+                                <Card.Text><span className="fa fa-user fa-lg"></span>  Navaneeth Bysani</Card.Text>
+                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 8985749089</Card.Text>
+                                <Card.Text><span className="fa fa-envelope fa-lg"></span> brn14@iitbbs.ac.in</Card.Text>
                             </Card.Body>
                         </Card>
                         </div>
@@ -65,9 +65,9 @@ class Team extends Component{
                         <Card style={{ width: '18rem'}} className="y">
                             <Card.Body>
                                 <Card.Title>For Chess</Card.Title>
-                                <Card.Text><span className="fa fa-user fa-lg"></span>name</Card.Text>
-                                <Card.Text><span className="fa fa-phone fa-lg"></span>phone</Card.Text>
-                                <Card.Text><span className="fa fa-envelope fa-lg"></span> email</Card.Text>
+                                <Card.Text><span className="fa fa-user fa-lg"></span>  Varre Rohit</Card.Text>
+                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 9381426875</Card.Text>
+                                <Card.Text><span className="fa fa-envelope fa-lg"></span> av12@iitbbs.ac.in</Card.Text>
                             </Card.Body>
                         </Card>
                         </div>
@@ -75,9 +75,9 @@ class Team extends Component{
                         <Card style={{ width: '18rem'}} className="y">
                             <Card.Body>
                                 <Card.Title>For Fitness Challenge</Card.Title>
-                                <Card.Text><span className="fa fa-user fa-lg"></span>name</Card.Text>
-                                <Card.Text><span className="fa fa-phone fa-lg"></span>phone</Card.Text>
-                                <Card.Text><span className="fa fa-envelope fa-lg"></span> email</Card.Text>
+                                <Card.Text><span className="fa fa-user fa-lg"></span>  Varre Rohit</Card.Text>
+                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 9381426875</Card.Text>
+                                <Card.Text><span className="fa fa-envelope fa-lg"></span> av12@iitbbs.ac.in</Card.Text>
                             </Card.Body>
                         </Card>
                         </div>
@@ -125,9 +125,9 @@ class Team extends Component{
                         <Card style={{ width: '18rem'}} className="y">
                             <Card.Body>
                                 <Card.Title>For Online Photography</Card.Title>
-                                <Card.Text><span className="fa fa-user fa-lg"></span>name</Card.Text>
-                                <Card.Text><span className="fa fa-phone fa-lg"></span>phone</Card.Text>
-                                <Card.Text><span className="fa fa-envelope fa-lg"></span> email</Card.Text>
+                                <Card.Text><span className="fa fa-user fa-lg"></span>  Swapnil More</Card.Text>
+                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 9549214948</Card.Text>
+                                <Card.Text><span className="fa fa-envelope fa-lg"></span> sdm10@iitbbs.ac.in</Card.Text>
                             </Card.Body>
                         </Card>
                         </div>
