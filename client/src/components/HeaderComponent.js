@@ -51,7 +51,7 @@ class Header extends Component {
                         </Collapse>
                         <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                <a href="https://drive.google.com/file/d/1xATdJUyAFaaIW-qU_ZckXsOIoN0QMkXC/view?usp=sharing" className="hiden btn btn-google">Rulebook</a>
+                                <a href="https://drive.google.com/file/d/1xATdJUyAFaaIW-qU_ZckXsOIoN0QMkXC/view?usp=sharing" target="_blank" className="hiden btn btn-google">Rulebook</a>
                                 </NavItem>
                                 <NavItem>
                                     <Button outline className="hiden btn btn-facebook" href="http://register.gciitbbs.live/">Register</Button>
