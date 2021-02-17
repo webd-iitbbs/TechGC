@@ -8,99 +8,67 @@ class Leader extends Component {
     this.state = {
       leaderboard: [
         {
-          tech: "loading...",
-          techAbs: "",
-          cult: "loading...",
-          cultAbs: "",
-          sports: "loading...",
-          sportsAbs: "",
+          techAbs: "loading...",
+          cultAbs: "loading...",
+          sportsAbs: "loading...",
           part: "loading...",
           total: "loading...",
-          totalAbs: "",
           branch: "loading...",
         },
         {
-          tech: "loading...",
-          techAbs: "",
-          cult: "loading...",
-          cultAbs: "",
-          sports: "loading...",
-          sportsAbs: "",
+          techAbs: "loading...",
+          cultAbs: "loading...",
+          sportsAbs: "loading...",
           part: "loading...",
           total: "loading...",
-          totalAbs: "",
           branch: "loading...",
         },
         {
-          tech: "loading...",
-          techAbs: "",
-          cult: "loading...",
-          cultAbs: "",
-          sports: "loading...",
-          sportsAbs: "",
+          techAbs: "loading...",
+          cultAbs: "loading...",
+          sportsAbs: "loading...",
           part: "loading...",
           total: "loading...",
-          totalAbs: "",
           branch: "loading...",
         },
         {
-          tech: "loading...",
-          techAbs: "",
-          cult: "loading...",
-          cultAbs: "",
-          sports: "loading...",
-          sportsAbs: "",
+          techAbs: "loading...",
+          cultAbs: "loading...",
+          sportsAbs: "loading...",
           part: "loading...",
           total: "loading...",
-          totalAbs: "",
           branch: "loading...",
         },
         {
-          tech: "loading...",
-          techAbs: "",
-          cult: "loading...",
-          cultAbs: "",
-          sports: "loading...",
-          sportsAbs: "",
+          techAbs: "loading...",
+          cultAbs: "loading...",
+          sportsAbs: "loading...",
           part: "loading...",
           total: "loading...",
-          totalAbs: "",
           branch: "loading...",
         },
         {
-          tech: "loading...",
-          techAbs: "",
-          cult: "loading...",
-          cultAbs: "",
-          sports: "loading...",
-          sportsAbs: "",
+          techAbs: "loading...",
+          cultAbs: "loading...",
+          sportsAbs: "loading...",
           part: "loading...",
           total: "loading...",
-          totalAbs: "",
           branch: "loading...",
         },
         {
-          tech: "loading...",
-          techAbs: "",
-          cult: "loading...",
-          cultAbs: "",
-          sports: "loading...",
-          sportsAbs: "",
+          techAbs: "loading...",
+          cultAbs: "loading...",
+          sportsAbs: "loading...",
           part: "loading...",
           total: "loading...",
-          totalAbs: "",
           branch: "loading...",
         },
         {
-          tech: "loading...",
-          techAbs: "",
-          cult: "loading...",
-          cultAbs: "",
-          sports: "loading...",
-          sportsAbs: "",
+          techAbs: "loading...",
+          cultAbs: "loading...",
+          sportsAbs: "loading...",
           part: "loading...",
           total: "loading...",
-          totalAbs: "",
           branch: "loading...",
         },
       ],
@@ -130,48 +98,50 @@ class Leader extends Component {
       .then((response) => {
         console.log("hi");
         let receivedData = response.data[0];
-        let techAbsScores = [],
-          cultAbsScores = [],
-          sportsAbsScores = [],
-          partAbsScores = [];
-        for (let item of receivedData) {
-          techAbsScores.push(parseInt(item.techAbs));
-          cultAbsScores.push(parseInt(item.cultAbs));
-          sportsAbsScores.push(parseInt(item.sportsAbs));
-          partAbsScores.push(parseInt(item.part));
-        }
-        let techMax = Math.max(...techAbsScores),
-          cultMax = Math.max(...cultAbsScores),
-          sportsMax = Math.max(...sportsAbsScores),
-          partMax = Math.max(...partAbsScores);
-        console.log(techMax);
-        let techNormalizedScores = techAbsScores.map((value) => {
-          return Math.ceil((value / techMax) * 100);
-        });
-        let cultNormalizedScores = cultAbsScores.map((value) => {
-          return Math.ceil((value / cultMax) * 100);
-        });
-        let sportsNormalizedScores = sportsAbsScores.map((value) => {
-          return Math.ceil((value / sportsMax) * 100);
-        });
-        let partNormalizedScores = partAbsScores.map((value) => {
-          return Math.ceil((value / partMax) * 100);
-        });
-        for (let i in receivedData) {
-          receivedData[i].tech = techNormalizedScores[i];
-          receivedData[i].cult = cultNormalizedScores[i];
-          receivedData[i].sports = sportsNormalizedScores[i];
-          receivedData[i].part = partNormalizedScores[i];
-          receivedData[i].total =
-            techNormalizedScores[i] +
-            cultNormalizedScores[i] +
-            sportsNormalizedScores[i] +
-            partNormalizedScores[i];
-        }
         receivedData.sort((a, b) => {
           return b.total - a.total;
         });
         this.setState({ leaderboard: receivedData });
+        // let techAbsScores = [],
+        //   cultAbsScores = [],
+        //   sportsAbsScores = [],
+        //   partAbsScores = [];
+        // for (let item of receivedData) {
+        //   techAbsScores.push(parseInt(item.techAbs));
+        //   cultAbsScores.push(parseInt(item.cultAbs));
+        //   sportsAbsScores.push(parseInt(item.sportsAbs));
+        //   partAbsScores.push(parseInt(item.part));
+        // }
+        // let techMax = Math.max(...techAbsScores),
+        //   cultMax = Math.max(...cultAbsScores),
+        //   sportsMax = Math.max(...sportsAbsScores),
+        //   partMax = Math.max(...partAbsScores);
+        // console.log(techMax);
+        // let techNormalizedScores = techAbsScores.map((value) => {
+        //   return Math.ceil((value / techMax) * 100);
+        // });
+        // let cultNormalizedScores = cultAbsScores.map((value) => {
+        //   return Math.ceil((value / cultMax) * 100);
+        // });
+        // let sportsNormalizedScores = sportsAbsScores.map((value) => {
+        //   return Math.ceil((value / sportsMax) * 100);
+        // });
+        // let partNormalizedScores = partAbsScores.map((value) => {
+        //   return Math.ceil((value / partMax) * 100);
+        // });
+        // for (let i in receivedData) {
+        //   receivedData[i].tech = techNormalizedScores[i];
+        //   receivedData[i].cult = cultNormalizedScores[i];
+        //   receivedData[i].sports = sportsNormalizedScores[i];
+        //   receivedData[i].part = partNormalizedScores[i];
+        //   receivedData[i].total =
+        //     techNormalizedScores[i] +
+        //     cultNormalizedScores[i] +
+        //     sportsNormalizedScores[i] +
+        //     partNormalizedScores[i];
+        // }
+        
+        
         console.log(this.state.leaderboard);
         // var originalScore = response.data[1];
         // var techscore = {
@@ -240,16 +210,13 @@ class Leader extends Component {
               <tr>
                 <td>{this.state.leaderboard[0].branch} </td>
                 <td className="hidden">
-                  {this.state.leaderboard[0].tech} (
-                  {this.state.leaderboard[0].techAbs})
+                  {this.state.leaderboard[0].techAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[0].cult} (
-                  {this.state.leaderboard[0].cultAbs})
+                  {this.state.leaderboard[0].cultAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[0].sports} (
-                  {this.state.leaderboard[0].sportsAbs})
+                  {this.state.leaderboard[0].sportsAbs}
                 </td>
                 <td className="hidden">{this.state.leaderboard[0].part} </td>
                 <td>{this.state.leaderboard[0].total} </td>
@@ -258,16 +225,13 @@ class Leader extends Component {
               <tr>
                 <td>{this.state.leaderboard[1].branch} </td>
                 <td className="hidden">
-                  {this.state.leaderboard[1].tech} (
-                  {this.state.leaderboard[1].techAbs})
+                  {this.state.leaderboard[1].techAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[1].cult} (
-                  {this.state.leaderboard[1].cultAbs})
+                  {this.state.leaderboard[1].cultAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[1].sports} (
-                  {this.state.leaderboard[1].sportsAbs})
+                  {this.state.leaderboard[1].sportsAbs}
                 </td>
                 <td className="hidden">{this.state.leaderboard[1].part} </td>
                 <td>{this.state.leaderboard[1].total} </td>
@@ -276,16 +240,13 @@ class Leader extends Component {
               <tr>
                 <td>{this.state.leaderboard[2].branch} </td>
                 <td className="hidden">
-                  {this.state.leaderboard[2].tech} (
-                  {this.state.leaderboard[2].techAbs})
+                  {this.state.leaderboard[2].techAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[2].cult} (
-                  {this.state.leaderboard[2].cultAbs})
+                  {this.state.leaderboard[2].cultAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[2].sports} (
-                  {this.state.leaderboard[2].sportsAbs})
+                  {this.state.leaderboard[2].sportsAbs}
                 </td>
                 <td className="hidden">{this.state.leaderboard[2].part} </td>
                 <td>{this.state.leaderboard[2].total} </td>
@@ -294,16 +255,13 @@ class Leader extends Component {
               <tr>
                 <td>{this.state.leaderboard[3].branch} </td>
                 <td className="hidden">
-                  {this.state.leaderboard[3].tech} (
-                  {this.state.leaderboard[3].techAbs})
+                  {this.state.leaderboard[3].techAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[3].cult} (
-                  {this.state.leaderboard[3].cultAbs})
+                  {this.state.leaderboard[3].cultAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[3].sports}(
-                  {this.state.leaderboard[3].sportsAbs})
+                  {this.state.leaderboard[3].sportsAbs}
                 </td>
                 <td className="hidden">{this.state.leaderboard[3].part} </td>
                 <td>{this.state.leaderboard[3].total} </td>
@@ -312,16 +270,13 @@ class Leader extends Component {
               <tr>
                 <td>{this.state.leaderboard[4].branch} </td>
                 <td className="hidden">
-                  {this.state.leaderboard[4].tech} (
-                  {this.state.leaderboard[4].techAbs})
+                  {this.state.leaderboard[4].techAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[4].cult} (
-                  {this.state.leaderboard[4].cultAbs})
+                  {this.state.leaderboard[4].cultAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[4].sports}(
-                  {this.state.leaderboard[4].sportsAbs})
+                  {this.state.leaderboard[4].sportsAbs}
                 </td>
                 <td className="hidden">{this.state.leaderboard[4].part} </td>
                 <td>{this.state.leaderboard[4].total} </td>
@@ -330,16 +285,13 @@ class Leader extends Component {
               <tr>
                 <td>{this.state.leaderboard[5].branch} </td>
                 <td className="hidden">
-                  {this.state.leaderboard[5].tech} (
-                  {this.state.leaderboard[5].techAbs})
+                  {this.state.leaderboard[5].techAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[5].cult} (
-                  {this.state.leaderboard[5].cultAbs})
+                  {this.state.leaderboard[5].cultAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[5].sports}(
-                  {this.state.leaderboard[5].sportsAbs})
+                  {this.state.leaderboard[5].sportsAbs}
                 </td>
                 <td className="hidden">{this.state.leaderboard[5].part} </td>
                 <td>{this.state.leaderboard[5].total} </td>
@@ -347,16 +299,13 @@ class Leader extends Component {
               <tr>
                 <td>{this.state.leaderboard[6].branch} </td>
                 <td className="hidden">
-                  {this.state.leaderboard[6].tech} (
-                  {this.state.leaderboard[6].techAbs})
+                  {this.state.leaderboard[6].techAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[6].cult} (
-                  {this.state.leaderboard[6].cultAbs})
+                  {this.state.leaderboard[6].cultAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[6].sports}(
-                  {this.state.leaderboard[6].sportsAbs})
+                  {this.state.leaderboard[6].sportsAbs}
                 </td>
                 <td className="hidden">{this.state.leaderboard[6].part} </td>
                 <td>{this.state.leaderboard[6].total} </td>
@@ -364,16 +313,13 @@ class Leader extends Component {
               <tr>
                 <td>{this.state.leaderboard[7].branch} </td>
                 <td className="hidden">
-                  {this.state.leaderboard[7].tech} (
-                  {this.state.leaderboard[7].techAbs})
+                  {this.state.leaderboard[7].techAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[7].cult} (
-                  {this.state.leaderboard[7].cultAbs})
+                  {this.state.leaderboard[7].cultAbs}
                 </td>
                 <td className="hidden">
-                  {this.state.leaderboard[7].sports}(
-                  {this.state.leaderboard[7].sportsAbs})
+                  {this.state.leaderboard[7].sportsAbs}
                 </td>
                 <td className="hidden">{this.state.leaderboard[7].part} </td>
                 <td>{this.state.leaderboard[7].total} </td>

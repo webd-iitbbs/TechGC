@@ -57,14 +57,10 @@ app.get("/leaderboard", async (req, res) => {
       let tempObj = {
         branch: branchNames[i],
         sportsAbs: data[i][0],
-        sports: 0,
         techAbs: data[i][1],
-        tech: 0,
         cultAbs: data[i][2],
-        cult: 0,
         part: data[i][3],
-        totalAbs: data[i][4],
-        total: 0,
+        total: data[i][4]
       };
       finalData.push(tempObj);
     }
