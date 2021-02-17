@@ -326,6 +326,9 @@ class Leader extends Component {
               </tr>
             </tbody>
           </Table>
+          <div className="normal">
+            Total is calculated as per normalisation rules mentioned in the rulebook.          
+          </div>
           <div className="note">
             **Tilt your device to Landscape Mode to see full table
           </div>

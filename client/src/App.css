@@ -144,6 +144,12 @@ th{
   padding: 0px !important;
 }
 
+.normal{
+  color: rgb(167, 217, 217);
+  padding: 10px;
+  font-size: 1.2em;
+}
+
 @media (min-width: 1200px) {
   .hide{
     display: none !important;
