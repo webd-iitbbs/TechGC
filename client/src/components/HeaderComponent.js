@@ -30,7 +30,7 @@ class Header extends Component {
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto"><Link  to='/home'><img src={logo} className="logo" width="90" alt='General Championship' /></Link>
-                        <a href="https://drive.google.com/file/d/1xATdJUyAFaaIW-qU_ZckXsOIoN0QMkXC/view?usp=sharing" target="_blank"className="hide btn btn-google">Rulebook</a>
+                        <a href="https://drive.google.com/file/d/1YZVK-oo8OlOzNoB6GPwdM9GAb1fOsiHu/view?usp=drivesdk" target="_blank"className="hide btn btn-google">Rulebook</a>
                         <Button outline className="hide btn btn-facebook" href="http://register.gciitbbs.live/">Register</Button>
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -51,7 +51,7 @@ class Header extends Component {
                         </Collapse>
                         <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                <a href="https://drive.google.com/file/d/1xATdJUyAFaaIW-qU_ZckXsOIoN0QMkXC/view?usp=sharing" target="_blank" className="hiden btn btn-google">Rulebook</a>
+                                <a href="https://drive.google.com/file/d/1YZVK-oo8OlOzNoB6GPwdM9GAb1fOsiHu/view?usp=drivesdk" target="_blank" className="hiden btn btn-google">Rulebook</a>
                                 </NavItem>
                                 <NavItem>
                                     <Button outline className="hiden btn btn-facebook" href="http://register.gciitbbs.live/">Register</Button>

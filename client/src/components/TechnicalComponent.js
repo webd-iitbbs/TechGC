@@ -20,7 +20,7 @@ class Technical extends Component{
                         <img className="d-block w-100 image" src={graphic} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Graphic Design</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Webd | 00:00</p>
+                        <p className="carouseltext">22/03/21 - 25/03/21 | Webd</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
@@ -28,7 +28,7 @@ class Technical extends Component{
                         <img className="d-block w-100 image" src={marathon} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Design Marathon</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Webd | 00:00</p>
+                        <p className="carouseltext">17/03/21 - 20/03/21 | Webd</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
@@ -36,7 +36,7 @@ class Technical extends Component{
                         <img className="d-block w-100 image" src={webathon} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Webathon</h3><br/><br/>
-                        <p className="carouseltext">13/02/21 | Webd | 09:00</p>
+                        <p className="carouseltext">20/03/21 - 22/03/21 | Webd</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* <Carousel.Item interval={1000}>
@@ -52,7 +52,7 @@ class Technical extends Component{
                         <img className="d-block w-100 image" src={coding} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Competitive Coding</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Neuromancers | 00:00</p>
+                        <p className="carouseltext">21/02/21 | Neuromancers | 19:00 - 21:00</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>

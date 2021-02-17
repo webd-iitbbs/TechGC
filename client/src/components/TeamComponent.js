@@ -65,9 +65,9 @@ class Team extends Component{
                         <Card style={{ width: '18rem'}} className="y">
                             <Card.Body>
                                 <Card.Title>For Chess</Card.Title>
-                                <Card.Text><span className="fa fa-user fa-lg"></span>  Varre Rohit</Card.Text>
-                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 9381426875</Card.Text>
-                                <Card.Text><span className="fa fa-envelope fa-lg"></span> av12@iitbbs.ac.in</Card.Text>
+                                <Card.Text><span className="fa fa-user fa-lg"></span>  Gaganpreet Singh</Card.Text>
+                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 7982608067</Card.Text>
+                                <Card.Text><span className="fa fa-envelope fa-lg"></span> gs35@iitbbs.ac.in</Card.Text>
                             </Card.Body>
                         </Card>
                         </div>
@@ -75,9 +75,29 @@ class Team extends Component{
                         <Card style={{ width: '18rem'}} className="y">
                             <Card.Body>
                                 <Card.Title>For Fitness Challenge</Card.Title>
+                                <Card.Text><span className="fa fa-user fa-lg"></span>  Gaganpreet Singh</Card.Text>
+                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 7982608067</Card.Text>
+                                <Card.Text><span className="fa fa-envelope fa-lg"></span> gs35@iitbbs.ac.in</Card.Text>
+                            </Card.Body>
+                        </Card>
+                        </div>
+                        <div className="offset-md-1 col-md-5">
+                        <Card style={{ width: '18rem'}} className="y">
+                            <Card.Body>
+                                <Card.Title>For CS:GO</Card.Title>
                                 <Card.Text><span className="fa fa-user fa-lg"></span>  Varre Rohit</Card.Text>
                                 <Card.Text><span className="fa fa-phone fa-lg"></span> +91 9381426875</Card.Text>
-                                <Card.Text><span className="fa fa-envelope fa-lg"></span> av12@iitbbs.ac.in</Card.Text>
+                                <Card.Text><span className="fa fa-envelope fa-lg"></span> gsecsports.sg@iitbbs.ac.in</Card.Text>
+                            </Card.Body>
+                        </Card>
+                        </div>
+                        <div className="offset-md-1 col-md-5">
+                        <Card style={{ width: '18rem'}} className="y">
+                            <Card.Body>
+                                <Card.Title>For Valorant</Card.Title>
+                                <Card.Text><span className="fa fa-user fa-lg"></span>  Varre Rohit</Card.Text>
+                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 9381426875</Card.Text>
+                                <Card.Text><span className="fa fa-envelope fa-lg"></span> gsecsports.sg@iitbbs.ac.in</Card.Text>
                             </Card.Body>
                         </Card>
                         </div>
