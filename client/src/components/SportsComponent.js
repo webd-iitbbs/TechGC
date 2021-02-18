@@ -33,7 +33,7 @@ class Sports extends Component{
                         <img className="d-block w-100 image" src={csgo} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Counter Strike:GO</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Sports | 00:00</p>
+                        <p className="carouseltext">29/03/21 - 04/04/21 | Sports</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
@@ -41,7 +41,7 @@ class Sports extends Component{
                         <img className="d-block w-100 image" src={valorant} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Valorant</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Sports | 00:00</p>
+                        <p className="carouseltext">05/04/21 - 11/04/21 | Sports1</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
