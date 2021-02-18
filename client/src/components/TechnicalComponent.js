@@ -4,6 +4,7 @@ import graphic from '../images/Graphic.jpg';
 import marathon from '../images/Marathon.jpg';
 import webathon from '../images/Webathon.jpg';
 import coding from '../images/CompetitiveCoding.png';
+import trading from '../images/Trading.jpg';
 import hackathon from '../images/Hackathon.png';
 import problem from '../images/ProblemSolving.jpg';
 import decode from '../images/Decode.jpg';
@@ -49,7 +50,7 @@ class Technical extends Component{
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
                         <a href="http://register.gciitbbs.live/" target="_blank">
-                        <img className="d-block w-100 image" src={} alt="First slide" /></a>
+                        <img className="d-block w-100 image" src={trading} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Virtual Trading</h3><br/><br/>
                         <p className="carouseltext">22/02/21 - 26/02/21 | Technical | 09:15 - 15:30</p>
