@@ -39,36 +39,12 @@ class Technical extends Component{
                         <p className="carouseltext">20/03/21 - 22/03/21 | Webd</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    {/* <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
-                        <img className="d-block w-100 image" src={decode} alt="Third slide"/></a>
-                        <Carousel.Caption>
-                        <h3 className="carouseltext">Decode the Message</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Nakshatra | 00:00</p>
-                        </Carousel.Caption>
-                    </Carousel.Item> */}
                     <Carousel.Item interval={1000}>
                         <a href="http://register.gciitbbs.live/">
                         <img className="d-block w-100 image" src={coding} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Competitive Coding</h3><br/><br/>
                         <p className="carouseltext">21/02/21 | Neuromancers | 19:00 - 21:00</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
-                        <img className="d-block w-100 image" src={hackathon} alt="Third slide" /></a>
-                        <Carousel.Caption>
-                        <h3 className="carouseltext">Hackathon</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Neuromancers | 00:00</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
-                        <img className="d-block w-100 image" src={problem} alt="Third slide"/></a>
-                        <Carousel.Caption>
-                        <h3 className="carouseltext">Semester Long Problem Solving</h3><br/><br/>
-                        <p className="carouseltext">00/00/00 | Neuromancers | 00:00</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
