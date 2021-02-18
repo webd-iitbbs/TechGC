@@ -16,7 +16,7 @@ class Technical extends Component{
                 <div className="col-12 col-md-8 offset-md-2">
                 <Carousel>
                     <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
+                        <a href="http://register.gciitbbs.live/" target="_blank">
                         <img className="d-block w-100 image" src={graphic} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Graphic Design</h3><br/><br/>
@@ -24,7 +24,7 @@ class Technical extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
+                        <a href="http://register.gciitbbs.live/" target="_blank">
                         <img className="d-block w-100 image" src={marathon} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Design Marathon</h3><br/><br/>
@@ -32,7 +32,7 @@ class Technical extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
+                        <a href="http://register.gciitbbs.live/" target="_blank">
                         <img className="d-block w-100 image" src={webathon} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Webathon</h3><br/><br/>
@@ -40,11 +40,19 @@ class Technical extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
+                        <a href="http://register.gciitbbs.live/" target="_blank">
                         <img className="d-block w-100 image" src={coding} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Competitive Coding</h3><br/><br/>
                         <p className="carouseltext">21/02/21 | Neuromancers | 19:00 - 21:00</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={1000}>
+                        <a href="http://register.gciitbbs.live/" target="_blank">
+                        <img className="d-block w-100 image" src={} alt="First slide" /></a>
+                        <Carousel.Caption>
+                        <h3 className="carouseltext">Virtual Trading</h3><br/><br/>
+                        <p className="carouseltext">22/02/21 - 26/02/21 | Technical | 09:15 - 15:30</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

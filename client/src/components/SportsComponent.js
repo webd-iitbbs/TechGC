@@ -13,7 +13,7 @@ class Sports extends Component{
                 <div className="col-12 col-md-8 offset-md-2">
                 <Carousel>
                 <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
+                        <a href="http://register.gciitbbs.live/" target="_blank">
                         <img className="d-block w-100 image" src={chess} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Chess</h3><br/><br/>
@@ -21,7 +21,7 @@ class Sports extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
+                        <a href="http://register.gciitbbs.live/" target="_blank">
                         <img className="d-block w-100 image" src={challenge} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Fitness Challenge</h3><br/><br/>
@@ -29,7 +29,7 @@ class Sports extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
+                        <a href="http://register.gciitbbs.live/" target="_blank">
                         <img className="d-block w-100 image" src={csgo} alt="Third slide"/></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Counter Strike:GO</h3><br/><br/>
@@ -37,7 +37,7 @@ class Sports extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
-                        <a href="http://register.gciitbbs.live/">
+                        <a href="http://register.gciitbbs.live/" target="_blank">
                         <img className="d-block w-100 image" src={valorant} alt="First slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Valorant</h3><br/><br/>
