@@ -55,9 +55,9 @@ class Team extends Component{
                         <Card style={{ width: '18rem'}} className="y">
                             <Card.Body>
                                 <Card.Title>For Virtual Trading</Card.Title>
-                                <Card.Text><span className="fa fa-user fa-lg"></span>  Akarsh Rana</Card.Text>
-                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 9458654394</Card.Text>
-                                <Card.Text><span className="fa fa-envelope fa-lg"></span> gsecsnt.sg@iitbbs.ac.in</Card.Text>
+                                <Card.Text><span className="fa fa-user fa-lg"></span>  Advait Deshmukh</Card.Text>
+                                <Card.Text><span className="fa fa-phone fa-lg"></span> +91 9588456318</Card.Text>
+                                <Card.Text><span className="fa fa-envelope fa-lg"></span> daj10@iitbbs.ac.in</Card.Text>
                             </Card.Body>
                         </Card>
                         </div>
