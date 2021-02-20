@@ -18,7 +18,7 @@ function Footer(props) {
             </div>       
             <br></br>    
                 <div className="col-auto copyright">
-                    <div>©2020, Designed by</div>
+                    <div>©2021, Designed by</div>
                     <div>Web & Design Society, IIT Bhubaneswar</div>
                 </div>
         </div>
