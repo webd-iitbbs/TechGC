@@ -9,7 +9,7 @@
 }
 #bodyBg2{
   background-color: rgb(30, 56, 89);
-  height: 3100px;
+  height: 3400px;
 }
 .block{
   height: 100px;
@@ -162,7 +162,7 @@ th{
       height: 600px;
     }
     #bodyBg2{
-      height: 600px;
+      height: 3400px;
     }
     .hide{
       display: none !important;
