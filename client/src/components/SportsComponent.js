@@ -25,7 +25,7 @@ class Sports extends Component{
                         <img className="d-block w-100 image" src={challenge} alt="Third slide" /></a>
                         <Carousel.Caption>
                         <h3 className="carouseltext">Fitness Challenge</h3><br/><br/>
-                        <p className="carouseltext">18/02/21 - 07/03/21 | Sports | 18:00</p>
+                        <p className="carouseltext">Date - Refer Rulebook | Sports | 18:00</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
